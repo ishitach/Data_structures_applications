@@ -1,0 +1,59 @@
+
+/* package whatever; // don't place package name! */
+import java.io.*;
+/* Name of the class has to be "Main" only if the class is public. */
+class LinkedList
+{ static Node head;
+ static class Node{
+	int data;
+	Node next;
+		Node(int d) {
+			data=d;next=null;
+	}
+	}
+	
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+	//	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	LinkedList ll =new	LinkedList();
+	ll.head =new Node(11);
+	Node n2=new Node(11);
+	Node n3 =new Node(11);
+	Node n4=new Node(12);
+	Node n6=new Node(13);
+	Node n5=new Node(13);
+	ll.head.next=n2;n2.next=n3;n3.next=n4;n4.next=n6;
+	n6.next=n5;
+	
+ll.removedup(ll.head);
+	Node n=ll.head;
+	while(n!=null){
+		System.out.println(n.data);
+	n=n.next;
+	}
+}
+public static void removedup(Node n)
+	{Node dup=null;
+	while(n.next!=null){
+		if(n.data==n.next.data){
+			dup=n.next;
+		n.next=n.next.next;
+	//	if(n.next.next==null) n.next=null;
+			//else
+			//delete(n.next);
+		}
+		else n=n.next;
+	}
+	
+	}
+	
+public static void delete(Node node){
+		//if(node.next==null) delete(node)
+		Node temp=node.next;
+		node.data=temp.data;
+		node.next=temp.next;
+		temp=null;
+	}
+	
+	}
