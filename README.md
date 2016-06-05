@@ -4,11 +4,13 @@ This is just for reference and help, think yourself and see them only if you are
 
 Convention followed for naming the files: 
 
-array_xxxx: Codes solved made arrays
+array_xxxx: Codes corresponding to arrays
 
-ll_xxxxxxx: Codes made using linked list 
+ll_xxxxxxx: Codes corresponding to linked list 
 
-stack_xxxx: Codes made using stack
+stack_xxxx: Codes corresponding to stack
 
-queue_xxxx: Codes made using queue
+queue_xxxx: Codes corresponding to queue
+
+bt_xxxxxxx: Codes corresponding to binary tree
 
